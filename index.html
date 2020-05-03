@@ -1,140 +1,131 @@
 <html>
-    <head>
-        <title>Login</title>
-        <!-- <link rel='stylesheet' href='./css/bootstrap.min.css'/> -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-        body, html { height: 90%; }
-    .outer {
-            width: 2px;
-            height: 70%;
-            margin: 0;
-            position: relative;
-            overflow: hidden;
-            }
-    .inner {
-            position: absolute;
-            width:100%;
-            height: 50%;
-            background: grey;
-            top: 10%;
-            box-shadow: 0px 0px 30px 40px grey;
-            }
-            .tbs{
-                border-radius: 25px;
-                width: 60%;
-                padding: 10px 10px;
-                margin: 10px 10;
-                box-sizing: border-box;
-                border: 0px solid #555;
-                outline: none;
-                  }
-            .tbs:focus {
-                
-background-color: lightblue;
-}
-            </style>
-    </head>
-    <body style="background-color: black">
+<head>
+    <!-- <link rel='stylesheet' href='./css/bootstrap.min.css'/> -->
 
-            <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="#">MyWebsiteBrother</a>
-                      </div>
-                      <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Page 1-1</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Page 2</a></li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                      </ul>
-                    </div>
-                  </nav>
-                </br>
-                <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3">
-                            <img src="images/wallpost.jpg" height="200" width="300">
-                        </div>
-                        <div class="col-md-1">
-                                <div class= "outer">
-                                        <div class="inner"></div>
-                                      </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="col-md-4">
-                                    <h5 style="color: white">Your Chosen name:</h5>
-                            </br>
-                        </br>
-                            <h5 style="color: white">Your magical code:</h5>
-                    
-                            </div>
-                            <div class="col-md-8">
-                                    <input type="text" class="tbs" style="color: black"  id="name">
-                                </br>
-                                    <input type="password" class="tbs" style="color: black"  id="pwd">
-                            
-            
-                            </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-9">
-                                <p id=pa style="color: red"></p>
-                            </div>
-                            <div class="col-md-3"></div>
-                            <div class="col-md-9">
-                                    <button class="btn btn-success" onclick="testMe()" style="border-radius: 25px;">Log Me in!</button>
-   
-                            </div>
-                 
-                             
-                        </br>
-                        
-                        </div>
-                       
-                    </div>
-                     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: black">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MyWebsiteBrother</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Page 1-1</a></li>
+                        <li><a href="page2.html">Page 1-2</a></li>
+                        <li><a href="page3.html">Page 1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="page3.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <script src='./js/jquery-3.4.1.min.js'></script>
-            <script src='./js/bootstrap.min.js'></script>
-            <script>
-            function testMe(){
-               // alert(document.getElementById("name").value);
-                var x=document.getElementById("name").value;
-                var y=document.getElementById("pwd").value;
-                if(x=="" && y ==""){
-                    $("#pa").html("User id and pwd should be present");
-                   // window.location="page3.html"
+
+    <center>
+        <h3>My Movies</h3>
+    </center>
+
+    </div>
+    <div class="row">
+
+
+        <div class="col-md-3">
+
+        </div><div class="col-md-3">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SX300.jpg" class="img-thumbnail"
+                 height="200" width="200">
+
+            </br>
+            <div id="stage" style="color: white;">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg " class="img-thumbnail"
+                 height="200" width="200">
+            </br>
+            <div id="stage1" style="color: white">
+
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="row">
+
+
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <button id="btnget" value="submit" onclick="clickme()" class="btn btn-success">click me!</button>
+        </div>
+        <div class="col-md-3">
+            <button id="btnget1" value="submit" onclick="savetodb()" class="btn btn-danger">Save to db!</button>
+        </div>
+        <div class="col-md-3">
+            <button id="btnget2" value="submit" onclick="next()" class="btn btn-success">Next Please!</button>
+        </div>
+    </div>
+
+
+
+    <script src='./js/jquery-3.4.1.min.js'></script>
+    <script src='./js/bootstrap.min.js'></script>
+
+    <script type="text/javascript" language="javascript">
+var key=29110791;
+            $(document).ready(function() {
+
+               $('#btnget1').hide();
+
+               $('#btnget2').hide();
+
+               $("#btnget").click(function(event){
+                  $.getJSON('http://www.omdbapi.com/?i=tt3896198&apikey='+key+'', function(jd) {
+                     $('#stage').html('<p> Title: ' + jd.Title + '</p>');
+                     $('#stage').append('<p>Yead of release : ' + jd.Year+ '</p>');
+                     $('#stage').append('<p> imdbRating: ' + jd.imdbRating+ '</p>');
+                     $('#stage').append('<p> plot:'+jd.Plot+'</p>');
+                     //$('#btnget').attr("disabled","true");
+                     //$('#btnget').hide();
+                  });
+
+
+                   $.getJSON('http://www.omdbapi.com/?t=inception&apikey='+key+'',  function(jd) {
+                     $('#stage1').html('<p> Title: ' + jd.Title + '</p>');
+                     $('#stage1').append('<p>Yead of release : ' + jd.Year+ '</p>');
+                     $('#stage1').append('<p> imdbRating: ' + jd.imdbRating+ '</p>');
+                     $('#stage1').append('<p> plot:'+jd.Plot+'</p>');
+                     //$('#btnget').attr("disabled","true");
+                     //$('#btnget').hide();
+                  });
+                  $('#btnget').hide();
+                  $('#btnget1').show();
+                  $('#btnget2').show();
+
+
+              });
+
+            });
+            function savetodb(){
+                    alert('saved succesfully');
                 }
-                else if(x==""){
-                    $("#pa").html("User id should be present");
-                    document.getElementById("pwd").value="";
-                }else if(y==""){
-                    $("#pa").html("Password should be present");
-                   document.getElementById("name").value="";
+                function next(){
+                    alert('taking you to next page!');
                 }
 
-                else if(x==='user' && y==='user'){
-                    alert('success');
-                    window.location="page4.html"
-                }else{
-                    alert('failure!');
-                    document.getElementById("pwd").value="";
-                    document.getElementById("name").value="";
-                    $("#pa").html("");
-                    //window.location="page4.html"
-                }
-            }
-            </script>
-    </body>
-    </html>
+    </script>
+
+
+</body>
+</html>
